@@ -239,3 +239,105 @@ li {
     font-size: 1.5rem;
     color: white;
 }
+.enjoy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    padding-bottom: 100px;
+}
+.enjoy-description{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.enjoy-image{
+    width: 40%;
+    display: flex;
+}
+.enjoy-image-1 , .enjoy-image-2{
+    width: 43%;
+
+     height: 380px;
+}
+.enjoy-image-1 {
+    margin-left: 50px;
+}
+.enjoy-description p{
+    text-align: center;
+    padding: 0px 70px;
+}
+.enjoy-description h1{
+    text-align: center;
+margin-bottom: 60px;
+}
+
+.foote-container{
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.footer-description{
+    display: flex;
+    flex-direction: column;
+
+}
+.footer-description h1{
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    text-align: center;    
+}
+
+.footer-description p{
+    color: white;
+    text-align: center;    
+    padding: 0 500px;
+}
+.footer-social{
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer-join{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 90px;
+}
+.footer-join h2{
+    margin-bottom: 20px;
+    color: white;
+}
+.footer-join input{
+    padding: 5px 0px;
+    cursor: pointer;
+}
+
+.footer-follow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 100px;
+}
+.footer-follow h2,.footer-follow div i{
+    color: white;
+}
+.footer-follow div i{
+    cursor: pointer;
+    padding:4px ;
+}
+.footer-follow div {
+    margin-top: 25px;
+}
