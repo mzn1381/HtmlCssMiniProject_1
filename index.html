@@ -7,15 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="CSS/Style.css" />
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="CSS/responsive.css">
+    <!-- <link rel="stylesheet" href="CSS/all.css"> -->
 </head>
 
 <body>
-        <header class="header">
+    <header class="header">
         <main class="header-main">
+
             <nav class="header-nav">
                 <div class="container">
+                    <div class="ham-menu">
+                        <i class="fas fa-bars" id="ham-menu" style="color: white;"></i>
+                    </div>
                     <ul class="nav-ul">
                         <li class="nav-li"><span>خانه </span></li>
                         <li class="nav-li"><span>قهوه</span></li>
@@ -24,11 +29,22 @@
                         <li class="nav-li"><span>درباره ما</span></li>
                         <li class="nav-li"><span>تماس باما</span></li>
                     </ul>
-                    <div class="nav-logo">
-                        <img class="logo-img" src="images/logo.svg" alt="toplearnLogo" />
+                    <div class="logo-img">
+                        <i class="fas fa-coffee" style="color: white;"></i>
                     </div>
                 </div>
             </nav>
+            <div class="menu-responsive">
+                <ul class="">
+                    <li class="close-menu" id="close-menu" style="text-align: right;width: 100%; align-items: start;padding: 0;padding-right: 5rem;font-size: 2rem; cursor: pointer;">x</li>
+                    <li class=""><span>خانه </span></li>
+                    <li class=""><span>قهوه</span></li>
+                    <li class=""><span>کیک</span></li>
+                    <li class=""><span>نوشیدنی</span></li>
+                    <li class=""><span>درباره ما</span></li>
+                    <li class=""><span>تماس باما</span></li>
+                </ul>
+            </div>
             <div class="header-descriptions">
                 <p class="description-title">
                     <span>قهوه های ما چه طعمی هستن ؟</span>
@@ -89,45 +105,64 @@
     <section class="enjoy">
         <div class="enjoy-description">
             <h1>خوشمزه و لذت بخش</h1>
-            <p> ما اینجا کلی خوردنی خوشمزه داریم کیک های مختلف برای ذائقه های مختلف شما انواع قهوه و نوشیدنی  های سرد و گرم ما دوست داریم شما زمانی که اینجا 
-                هستید بهترین لحظات زندگیتون رو پشت سر بزارین پس نگران طعم و مزه نباشید اینجا همه چی خوشمزه و لذت بخشه
+            <p> ما اینجا کلی خوردنی خوشمزه داریم کیک های مختلف برای ذائقه های مختلف شما انواع قهوه و نوشیدنی های سرد و گرم ما دوست داریم شما زمانی که اینجا هستید بهترین لحظات زندگیتون رو پشت سر بزارین پس نگران طعم و مزه نباشید اینجا همه چی خوشمزه و لذت بخشه
             </p>
         </div>
         <div class="enjoy-image">
-            <img src="images/delight.jpg" class="enjoy-image-1" alt="enjoy-image-1" >
+            <img src="images/delight.jpg" class="enjoy-image-1" alt="enjoy-image-1">
             <img src="images/delighttwo.jpg" alt="enjoy-image-2" class="enjoy-image-2">
         </div>
     </section>
 
-<footer class="footer">
-<div class="foote-container">
-    <div class="footer-description">
-        <h1>درباره ما</h1>
-        <p>
-        ما داستانی عاشقانه شروع کردیم , داستانی که شروعش با یک قهوه بود و حالا هر روز قهوه های دونفره زوج های عاشق را شاهد هستیم اینجا خونه ی عشقه و ما عاشق قهوه های دونفره ایم همین کافیه تا یه داستان فوق العاده رقم بخوره
-        </p>
-    </div>
-    <div class="footer-social">
-        <div class="footer-join">
-            <h2>عضویت خبرنامه </h2>
-            <input type="text">
-        </div>
-        <div class="footer-follow">
-            <h2>دنبال کنید</h2>
-            <div>
-                <span><i class="fab fa-linkedin"></i></span>
-                <span><i class="fab fa-twitter"></i></span>
-                <span><i class="fab fa-facebook"></i></span>
-                <span><i class="fab fa-google-plus"></i></span>
+    <footer class="footer">
+        <div class="foote-container">
+            <div class="footer-description">
+                <h1>درباره ما</h1>
+                <p>
+                    ما داستانی عاشقانه شروع کردیم , داستانی که شروعش با یک قهوه بود و حالا هر روز قهوه های دونفره زوج های عاشق را شاهد هستیم اینجا خونه ی عشقه و ما عاشق قهوه های دونفره ایم همین کافیه تا یه داستان فوق العاده رقم بخوره
+                </p>
+            </div>
+            <div class="footer-social">
+                <div class="footer-join">
+                    <h2>عضویت خبرنامه </h2>
+                    <input type="text">
+                </div>
+                <div class="footer-follow">
+                    <h2>دنبال کنید</h2>
+                    <div>
+                        <span><i class="fab fa-linkedin"></i></span>
+                        <span><i class="fab fa-twitter"></i></span>
+                        <span><i class="fab fa-facebook"></i></span>
+                        <span><i class="fab fa-google-plus"></i></span>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</div>
 
-</footer>
+    </footer>
 
 
 </body>
 
 </html>
-<script></script>
+<script>
+    let el = document.getElementById("ham-menu");
+    el.addEventListener("click", (e) => {
+        console.log("I am going to go my target never give up!!")
+        var target = document.getElementsByClassName("menu-responsive");
+        console.log(target[0]);
+        // target[0].style.setProperty("opacity", "1");
+        target[0].style.setProperty("right", "0px");
+
+    });
+
+    let closeElement = document.getElementById("close-menu");
+    closeElement.addEventListener("click", (e) => {
+        var target = document.getElementsByClassName("menu-responsive");
+        console.log(target[0]);
+        target[0].style.right = "-1200px";
+        // target[0].style.setProperty("opacity", "0");
+
+
+    });
+</script>
